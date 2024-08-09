@@ -1,0 +1,193 @@
+*{border: 0;padding: 0;margin: 0}
+html{
+	width: 980px;
+	height: 100%;
+	background-color: #333;
+	margin: auto;
+	/* Estas lineas es para darle formato a todos los parrafos*/
+	line-height: 1.5em;
+	font-family: 'verdana';
+	font-size: 11pt;
+}
+h2{margin-bottom: 20px;}/*Separo el contenido de los encabezados de nivel 2*/
+
+nav{
+	position: relative;
+	top: 0;
+	width: 980px;
+	height: 90px;
+	background-color: #fff;
+	font-family: 'Times New Roman';
+	font-size: 16pt;
+	font-weight: 500;
+	line-height: 1em;
+}
+nav ul{
+	list-style-type: none;
+	display: inline-flex;
+	margin-top: 30px;
+}
+nav ul div{
+	margin-top: -10px;
+	font-weight: bold;
+	border: solid 2px #000;
+	font-size: 19pt;
+	font-weight: bold;
+	padding: 6px;
+	margin-left: 30px;
+	margin-right: 60px;
+}
+nav ul a{
+	text-decoration: none;
+	margin-right: 30px;
+	color: #000;
+}
+nav ul a:hover{
+	color: blue;
+}
+.caja1{
+	width: 980px;
+	height: 550px;
+	background-image: url("imagenes/fotito.jpg");
+	background-size: cover;
+	background-position: center;
+}
+.caja1 .izquierda{
+	width: 490px;
+	height: 250px;
+	/*Alineacion de contenido*/
+	padding-left: 45px;
+	padding-top: 40px;
+	position: absolute;
+}
+.caja1 .izquierda a{
+
+		border-radius: 20px;
+	background-color: #FF6D00;
+
+}
+div p{padding-bottom: 45px;}/*Se realiza separación del contenido con los bordes*/
+
+/* Se realiza el estilo para el botón*/
+div a{
+	background-color: blue;
+	color: #fff;
+	text-decoration: none;
+	font-size: 13pt;
+	font-weight: 600;
+	padding: 15px 125px 15px 125px;
+	margin-left: 50px;
+}
+.caja2{
+	background-color: #efefef;
+	padding: 20px;
+}
+.caja2 h2{text-align: center;font-size: 24pt;}/*Alineacion a los encabezados de la caja 2 y al mismo tiempo se le da un tamaño
+
+
+/*Tamaño de caja 3*/
+.caja3{
+	width: 980px;
+	background-color: #efefef;
+	height: 400px;
+}
+/* alineacion del contenido*/
+.caja3 .lista{
+	font-size: 30px;
+	width: 40%;
+	float: right;
+	list-style-image: url("imagenes/check.png");
+}
+
+.caja3 .lista li{
+
+	height: 40px;
+}
+/* Diseño caja 4 */
+.img1{
+    width: 550px;
+    height: 400px;
+}
+.caja4{
+
+	background-color: #D8D8D8;
+	color: #FF6D00;
+	height: 180px;
+}
+
+.caja4 h3{
+	text-align: center;
+	padding-top: 40px;
+	margin-bottom: 40px;}/* Alineacion del encabezado 3 dentro de la caja 4*/
+
+.caja4 a{
+	display: inline-flex;
+	justify-content: center;
+	width: 150px;
+	margin-left: 270px;
+	border-radius: 20px;
+	background-color: #FF6D00;
+	color: #000;
+}
+.caja5{
+
+	background-color: #D8D8D8;
+	height: 79px;
+}
+.caja5 a{
+	display: inline-flex;
+	justify-content: center;
+	width: 150px;
+	margin-left: 270px;
+	border-radius: 20px;
+	background-color: #FF6D00;
+	color: #000;
+}
+.caja5 h3{
+
+	text-align: center;
+	padding-top: 40px;
+	margin-bottom: 40px;
+}
+.grilla {
+
+	position: relative;
+	max-width: 100%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+	grid-gap: 1rem;
+	background-color: black;
+}
+.carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+}
+
+#prevBtn,
+#nextBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  color: #FF6D00;
+  font-size: 24px;
+}
+
+#prevBtn {
+  left: 10px;
+}
+
+#nextBtn {
+  right: 10px;
+}
+
+#slideImg {
+  max-width: 100%;
+  max-height: 100%;
+}
